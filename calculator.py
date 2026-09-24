@@ -18,6 +18,12 @@ def power(a, b):
 
 def modulus(a, b):
     return a % b
+def floor_div(a, b):
+    return a // b
+
+def absolute(a):
+    return abs(a)
+
 
 print("Welcome to Simple Calculator!")
 print("Addition: ", add(5, 3))
@@ -26,4 +32,6 @@ print("Multiplication: ", multiply(4, 5))
 print("Division: ", divide(10, 2))
 print("Power: ", power(2, 3))
 print("Modulus: ", modulus(10, 3))
+print("Floor Division: ", floor_div(10, 3))
+print("Absolute: ", absolute(-5))
 
