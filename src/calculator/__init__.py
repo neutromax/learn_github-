@@ -6,36 +6,42 @@ from rich.text import Text
 # Initialize Rich console
 console = Console()
 
-# Simple Calculator Functions
 
 def add(a, b):
     return a + b
 
+
 def subtract(a, b):
     return a - b
 
+
 def multiply(a, b):
     return a * b
+
 
 def divide(a, b):
     if b == 0:
         return "Cannot divide by zero!"
     return a / b
 
+
 def power(a, b):
     return a ** b
+
 
 def modulus(a, b):
     return a % b
 
+
 def floor_div(a, b):
     return a // b
+
 
 def absolute(a):
     return abs(a)
 
 
-def main():
+def main() -> None:
     """Main function to run the calculator."""
     # Display Banner
     banner_text = Text.from_markup(
@@ -78,8 +84,3 @@ def main():
         expand=False
     )
     console.print(summary)
-
-
-if __name__ == "__main__":
-    main()
-
